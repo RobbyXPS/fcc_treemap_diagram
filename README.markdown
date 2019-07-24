@@ -9,3 +9,5 @@ https://www.d3indepth.com/layouts/
 https://github.com/d3/d3-hierarchy/blob/master/README.md
 http://www.cs.umd.edu/hcil/treemap-history/
 )
+
+If you open the /dist/index.html file in a browser, it should look exactly as you built it in CodePen.
