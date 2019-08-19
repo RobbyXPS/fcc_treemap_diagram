@@ -1,13 +1,42 @@
-# FCC: Treemap Diagram
- _A Pen created at CodePen.io. Original URL: [https://codepen.io/EastRobby/pen/BerqEe](https://codepen.io/EastRobby/pen/BerqEe).
+# Data Visualization Projects - Treemap Diagram
 
- //Lessons & Tech:
-- Treemap chart created with d3.js
-- Inspiration via (
-https://codepen.io/freeCodeCamp/pen/KaNGNR?editors=0010
-https://www.d3indepth.com/layouts/
-https://github.com/d3/d3-hierarchy/blob/master/README.md
-http://www.cs.umd.edu/hcil/treemap-history/
-)
+### _User stories_
 
-If you open the /dist/index.html file in a browser, it should look exactly as you built it in CodePen.
+1. My tree map should have a title with a corresponding id="title".
+2. My tree map should have a description with a corresponding id="description".
+3. My tree map should have rect elements with a corresponding class="tile" that represent the data.
+4. There should be at least 2 different fill colors used for the tiles.
+5. Each tile should have the properties data-name, data-category, and data-value containing their corresponding name, category, and value.
+6. The area of each tile should correspond to the data-value amount: tiles with a larger data-value should have a bigger area.
+7. My tree map should have a legend with corresponding id="legend".
+8. My legend should have rect elements with a corresponding class="legend-item".
+9. The rect elements in the legend should use at least 2 different fill colors.
+10. I can mouse over an area and see a tooltip with a corresponding id="tooltip" which displays more information about the area.
+11. My tooltip should have a data-value property that corresponds to the data-value of the active area.
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+### _Technology and how it was used_
+
+#### Front-End features (HTML + CSS + D3.js)
+    - Draw graph on svg html element leveraging D3.js data visualization library. 
+    - Import fonts from CDN.
+    - Fetch JSON data from https://cdn.rawgit.com/freeCodeCamp/testable-projects-fcc/a80ce8f9/src/data/tree_map/video-game-sales-data.json. 
+    - Create color options via Ordinal Scale.
+    - Tooltip UI.
+    - Traverse all nodes in json response and create html elements from them.
+    - Mouseover/Mouseout interactive functionality to display overlay with more info.
+    
+  <br>
+  <br>
+  <br>
+  <br>
+
+#### The following links were used as help/inspiration for this project:
+    - https://codepen.io/freeCodeCamp/pen/KaNGNR?editors=0010
+    - https://www.d3indepth.com/layouts/
+    - https://github.com/d3/d3-hierarchy/blob/master/README.md
+    - http://www.cs.umd.edu/hcil/treemap-history/
